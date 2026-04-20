@@ -11,7 +11,7 @@ pipeline {
         stage('Clone Code') {
             steps {
                 // Pull latest code from GitHub
-                git 'https://github.com/your-username/node-cicd-app.git'
+                git 'https://github.com/prisha-pemal/node-cicd-app.git'
             }
         }
 
