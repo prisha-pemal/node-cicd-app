@@ -9,11 +9,10 @@ pipeline {
     stages {
 
         stage('Clone Code') {
-            steps {
-                // Pull latest code from GitHub
-                git 'https://github.com/prisha-pemal/node-cicd-app.git'
-            }
-        }
+    steps {
+        git branch: 'main', url: 'https://github.com/prisha-pemal/node-cicd-app.git'
+    }
+}
 
         stage('Install Dependencies') {
             steps {
